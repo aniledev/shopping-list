@@ -28,17 +28,17 @@ $(function addItem() {
 });
 
 // check
-  // when you press the check button add the shopping check class to the html
-$(function check(){
-  $(".shopping-list").on("click", ".button-lable-check", function (event) {
-    event.preventDefault();
-    $(event.currentTarget).
-  })
-})
-
+// when you press the check button add the shopping check class to the html
+$(function check() {
+  $("ul").on("click", ".shopping-item-toggle", function (event) {
+    $(event.currentTarget)
+      .closest("li")
+      .find(".shopping-item")
+      .toggleClass("shopping-item__checked");
+  });
+});
 
 // uncheck
-
 
 //   when button is clicked it should remove the entire li within the ul in html
 $(function deleteItem() {

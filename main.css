@@ -4,9 +4,12 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #FFFCE8;
+  background-color: black
 }
 
-button, input[type="text"] {
+button,
+input[type="text"] {
   padding: 5px;
 }
 
@@ -28,15 +31,17 @@ button:hover {
   padding-left: 0;
 }
 
-.shopping-list > li {
-  margin-bottom: 20px;
-  border: 1px solid grey;
+.shopping-list>li {
+  margin-bottom: 5px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  border-radius: 10px;
   padding: 20px;
 }
 
 .shopping-item {
   display: block;
-  color: grey;
+  color: #FFFCE8;
   font-style: italic;
   font-size: 20px;
   margin-bottom: 15px;
@@ -44,4 +49,12 @@ button:hover {
 
 .shopping-item__checked {
   text-decoration: line-through;
+}
+
+.shopping-item-delete {
+  background-color: #FF6F5C;
+}
+
+.shopping-item-toggle {
+  background-color: #98E278;
 }
