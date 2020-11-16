@@ -14,10 +14,10 @@ $(function addItem() {
       <span class="shopping-item">${add}</span>
       <div class="shopping-item-controls">
         <button class="shopping-item-toggle">
-          <span class="button-label">check</span>
+          <span class="button-label-check">check</span>
         </button>
         <button class="shopping-item-delete">
-          <span class="button-label">delete</span>
+          <span class="button-label-delete">delete</span>
         </button>
       </div>
     </li>`
@@ -28,5 +28,23 @@ $(function addItem() {
 });
 
 // check
+  // when you press the check button add the shopping check class to the html
+$(function check(){
+  $(".shopping-list").on("click", ".button-lable-check", function (event) {
+    event.preventDefault();
+    $(event.currentTarget).
+  })
+})
+
+
 // uncheck
-// remove
+
+
+//   when button is clicked it should remove the entire li within the ul in html
+$(function deleteItem() {
+  $(".shopping-list").on("click", ".shopping-item-delete", function (event) {
+    event.preventDefault();
+    // should remove the entire li within the ul in html
+    $(event.currentTarget).closest("li").remove();
+  });
+});
